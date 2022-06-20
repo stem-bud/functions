@@ -7,11 +7,11 @@ namespace equationSolve
     {
         public static void Main(string[] args)
         {
-            //something's wrong here
             while (true)
             {
                 try
                 {
+                    Console.WriteLine("write points like this :(x1,y1) (x2,y2) (x3,y3)");
                     string userPoints = Console.ReadLine();
                     string function = points.makeEquation(solver.readMultiplePoints(userPoints));
                     Console.WriteLine(function+"\n");
